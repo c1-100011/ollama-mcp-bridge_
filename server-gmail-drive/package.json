@@ -1,0 +1,20 @@
+{
+  "name": "@patruff/server-gmail-drive",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "auth": "ts-node src/index.ts auth"
+  },
+  "dependencies": {
+    "@google-cloud/local-auth": "^2.1.0",
+    "@modelcontextprotocol/sdk": "^0.1.0",
+    "googleapis": "^105.0.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  }
+}

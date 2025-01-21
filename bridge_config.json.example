@@ -1,0 +1,60 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\example\\AppData\\Roaming\\npm\\node_modules\\@modelcontextprotocol\\server-filesystem\\dist\\index.js",
+        "C:\\Users\\example\\MCP-TEST",
+        "C:\\Users\\example\\VAULT"
+      ],
+      "allowedDirectory": "C:\\Users\\example"
+    },
+    "memory": {
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\example\\AppData\\Roaming\\npm\\node_modules\\@modelcontextprotocol\\server-memory\\dist\\index.js"
+      ]
+    },
+    "brave-search": {
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\example\\AppData\\Roaming\\npm\\node_modules\\@modelcontextprotocol\\server-brave-search\\dist\\index.js"
+      ],
+      "env": {
+        "BRAVE_API_KEY": "your-brave-api-key-here"
+      }
+    },
+    "github": {
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\example\\AppData\\Roaming\\npm\\node_modules\\@modelcontextprotocol\\server-github\\dist\\index.js"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_PERSONAL_ACCESS_TOKEN}"
+      }
+    },
+    "flux": {
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\example\\AppData\\Roaming\\npm\\node_modules\\@patruff\\server-flux\\dist\\index.js"
+      ],
+      "env": {
+        "REPLICATE_API_TOKEN": "${REPLICATE_API_TOKEN}"
+      }
+    },
+    "gmail-drive": {
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Users\\example\\AppData\\Roaming\\npm\\node_modules\\@patruff\\server-gmail-drive\\dist\\index.js"
+      ]
+    }
+  },
+  "llm": {
+    "model": "qwen2.5-coder:7b-instruct",
+    "baseUrl": "http://localhost:11434",
+    "apiKey": "your-api-key-here",
+    "temperature": 0.1,
+    "maxTokens": 1000
+  },
+  "systemPrompt": "You are a helpful assistant with access to various tools. You must always respond in JSON format:\n\n1. When you need to use a tool, respond with:\n{\n  \"name\": \"write_file\",\n  \"arguments\": {\n    \"path\": \"path/to/file.txt\",\n    \"content\": \"content to write\"\n  },\n  \"thoughts\": \"Explanation of why you're using this tool\"\n}\n\n2. When providing information or analysis, respond with:\n{\n  \"response\": \"your natural language response here\"\n}\n\nIMPORTANT RULES:\n- For ANY queries about news, headlines, or current events, you MUST use the brave_web_search tool to get real-time information\n- Never provide generic responses about news sources without actually searching\n- Your responses in the \"response\" field should be clear, informative, and conversational\n- Never include raw JSON or technical formatting in the response text itself\n- When writing files, you can use either forward slashes or backslashes in paths - the system will handle normalization"
+}

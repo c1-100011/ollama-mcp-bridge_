@@ -17,3 +17,6 @@ __pycache__/
 
 # Logs
 *.log
+
+# Config files with secrets
+bridge_config.json
