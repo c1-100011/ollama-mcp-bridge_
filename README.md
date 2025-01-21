@@ -14,6 +14,12 @@ This project bridges local Large Language Models with MCP servers that provide v
 
 The bridge translates between the LLM's outputs and the MCP's JSON-RPC protocol, allowing any Ollama-compatible model to use these tools just like Claude does.
 
+## Demo
+
+Here's a quick demo of the filesystem operations capability:
+
+https://github.com/patruff/ollama-mcp-bridge/assets/demo-filesystem.mp4
+
 ## Current Setup
 
 - **LLM**: Using Qwen 2.5 7B (qwen2.5-coder:7b-instruct) through Ollama
