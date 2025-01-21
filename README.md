@@ -18,7 +18,7 @@ The bridge translates between the LLM's outputs and the MCP's JSON-RPC protocol,
 
 Here's a quick demo of the filesystem operations capability:
 
-https://github.com/c1-100011/ollama-mcp-bridge_/assets/demo-filesystem.mp4
+https://github.com/c1-100011/ollama-mcp-bridge_/demo-filesystem.mp4
 
 ## Current Setup
 
