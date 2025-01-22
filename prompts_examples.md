@@ -45,10 +45,22 @@ This document provides example prompts that demonstrate the capabilities of vari
 ## Image Generation
 
 ```
-"Generate an image of a sunset over mountains"
-"Create a widescreen image of a futuristic city"
-"Generate an artistic portrait in 4:3 aspect ratio"
-"Create a quick sketch of a garden landscape"
+"Generate an image of a sunset over mountains with 1 megapixel resolution in 16:9 aspect ratio"
+"Create a futuristic city at 0.25 megapixels with 21:9 cinematic ratio"
+"Generate an artistic portrait in 4:3 aspect ratio with 1MP quality"
+"Create a square landscape at 0.25MP using 1:1 ratio"
+```
+
+Note: Image generation requirements and behavior:
+1. Megapixels parameter must be either "1" or "0.25"
+2. Aspect ratio must be one of: 1:1, 16:9, 21:9, 3:2, 2:3, 4:5, 5:4, 3:4, 4:3, 9:16, or 9:21
+3. The tool returns URLs to the generated images rather than saving files locally
+4. To save the image locally, you'll need to download it from the returned URL
+
+Example combined usage:
+```
+"Generate an image of a mountain landscape at 1MP in 16:9 ratio and save it to my Drive"
+"Create a portrait image at 0.25MP in 3:4 ratio and save it locally as portrait.png"
 ```
 
 ## Combined Capabilities
