@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Environment and config files
+.env
+.env.*
+*.log
+
+# IDE files
+.vscode/
+.idea/
+
+# Test files
+tests/
+**/*.test.ts
+**/*.spec.ts
+
+# Temporary files
+*.tmp
+*.temp

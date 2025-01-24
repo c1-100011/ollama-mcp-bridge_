@@ -7,6 +7,9 @@ Write a short story and write_file to c:\users\administrator\MCP-TEST
 
 Search the web for latest developments in AI
 
+brave_web_search the latest news, read the articles, then provide me with a breifing
+- Adds observations to knowledge graph memory
+
 
 ## Gmail & Google Drive Integration
 
